@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Quintessence</title>
+	<meta name="description"
+		content="Le restaurant Quintessence propose des produits issus des territoires gastronomes de Moselle, du grand est et des produits coup de cœur d'ici et d’ailleurs">
+
+	<!-- meta viewport : importante à inclure pour l'affichage sur les divers appareils -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="icon" href="img/logo-nn.png">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+	<script src="https://kit.fontawesome.com/4dfde5bd20.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<header>
+
+		<div class="navigation">
+			<div class="container flex-nav">
+				<a class="logo" href="index.html"><img src="img/logo-nn.png" alt="Logo"></a>
+				<nav class="flex">
+					<i class="fas fa-bars" id="menu-burger"></i>
+					<ul>
+						<li><a class="btn-nav" href="index.html">Accueil</a></li>
+						<li><a class="btn-nav current" href="reserver.html">Réserver</a></li>
+						<li><a class="btn-nav" href="menu.html">Menu</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="container text-header-reserver">
+				<h1>RESERVER</h1>
+			</div>
+
+		</div>
+
+
+
+
+	</header>
+
+	<main>
+		<div class="container">
+			<h2>Formulaire de réservation</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis fugit laudantium cumque tempore
+				deleniti
+				at aperiam consectetur totam, eveniet dolore possimus harum? Cum consequatur, voluptatum explicabo
+				inventore
+				velit deserunt deleniti labore quaerat excepturi laborum. Iste saepe deserunt optio beatae fugiat cumque
+				eaque, eos id totam, amet.</p>
+		</div>
+
+		<div class="container">
+			<div id="formulaire" class="fieldset">
+
+				<div class="titleform">
+					<h1>RÉSERVATION</h1>
+				</div>
+				<form action="http://dev.dfrmedia.com/backend.php" method="post">
+					<div class="rangee-form">
+						<div class="left-form">
+							<label for="nom">Nom et Prénom:</label><br>
+							<input type="text" name="nom" id="nom" required><br>
+							
+							<label for="phone">Numéro de télephone :</label><br>
+							<input type="tel" name="phone" id="phone" placeholder="+1 (123) 456-7890" required><br>
+							<label for="nbrPersonnes">Nombre de personnes :</label><br>
+							<input type="number" name="nbrPersonnes" id="nbrPersonnes" value="1" min="1" max="10"><br>
+							
+							<label for="selectLieu">Lieu de réservation :</label>
+							<select name="selectLieu" id="selectLieu">
+								<option value="Salle à manger" selected>Salle à manger</option>
+								<option value="Terrasse">Terrasse</option>
+							</select>
+							
+
+						</div>
+						<div class="right-form">
+							<label for="date">Date de réservation :</label><br>
+							<input type="date" name="date" id="date" required><br>
+							<label for="selectHeure">Heure de réservation :</label><br>
+							<select name="selectHeure" id="selectHeure">
+								<option value="">Selectionnez une heure</option>
+								<option value="12:00">12:00</option>
+								<option value="12:30">12:30</option>
+								<option value="13:00">13:00</option>
+								<option value="13:30">13:30</option>
+								<option value="14:00">14:00</option>
+								<option value="14:30">14:30</option>
+								<option value="15:00">15:00</option>
+								<option value="15:30">15:30</option>
+								<option value="16:00">16:00</option>
+								<option value="16:30">16:30</option>
+								<option value="17:00">17:00</option>
+								<option value="17:30">17:30</option>
+								<option value="18:00">18:00</option>
+								<option value="18:30">18:30</option>
+								<option value="19:00">19:00</option>
+								<option value="19:30">19:30</option>
+								<option value="20:00">20:00</option>
+								<option value="20:30">20:30</option>
+								<option value="21:00">21:00</option>
+							</select><br>
+							<label for="mail">Adresse mail :</label><br>
+							<input type="email" name="mail" id="mail" placeholder="xyz@gmail.com" required><br>
+							<label for="commentaire">Commentaire :</label><br>
+							<textarea name="commentaire" id="commentaire"></textarea><br>
+							
+							
+						</div>
+					</div>
+					
+					<div class="form-end">
+						<div>
+							<div>
+								<label for="newsletter" id="label-newsletter">S'abonner à l'infolettre</label>
+								<input type="checkbox" name="newsletter" id="newsletter" checked>
+							</div>
+							
+						</div>
+						<div>
+							<input type="reset" value="RÉINITIALISER">
+							<input type="submit" value="RÉSERVER">
+						</div>
+						
+					</div>
+
+					
+				</form>
+					
+				
+			</div>
+				
+
+			
+		</div>
+		
+
+
+	</main>
+
+	<footer>
+		<div class="container">
+			<div class="rangee-footer">
+				<div class="text-map">
+					<h1>Pour nous joindre</h1>
+					<a href="mailto:info@quintessence.com">info@quintessence.com</a>
+					<a href="tel:+1418-123-4567">418-123-4567</a>
+					<div class="socials">
+						<a href="#"><i class="fa-brands fa-facebook"></i></a>
+						<a href="#"><i class="fa-brands fa-instagram" style="width: 70px;"></i></a>
+						<a href="#"><i class="fa-brands fa-linkedin" style="width: 70px;"></i></a>
+					</div>
+				</div>
+				<div class="map">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1365.7975513283156!2d-71.25962802906733!3d46.79258223368937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdecfbf664fb7c457!2sSubway!5e0!3m2!1sfr!2sca!4v1649773343626!5m2!1sfr!2sca"
+						width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+
+		</div>
+
+
+
+	</footer>
+
+</body>
+
+</html>
