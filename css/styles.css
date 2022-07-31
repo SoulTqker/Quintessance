@@ -1,0 +1,483 @@
+
+/* Propriétés générales */
+
+html{
+	scroll-behavior: smooth;
+	font-family: "Montserrat", sans-serif;
+}
+
+* {box-sizing: border-box;}
+
+img {max-width: 100%;}
+
+.container {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+nav ul li{
+	display: inline-block;
+	list-style: none;
+}
+
+
+.current{
+	background-color: #ca9d66;
+	padding: 10px;
+	border-radius: 150px;
+	
+}
+
+.btn{
+	background-color: #ca9d66;
+	padding: 10px;
+	border-radius: 150px;
+	text-decoration: none;
+	color: white;
+	font-family: "Montserrat", sans-serif;
+	transition: color 0.3s ease 0s;
+	text-align: center;
+	display: inline-block;
+
+}
+
+
+.btn:hover{
+	color: black;
+}
+
+
+/*----------------------------------------HEADER----------------------------------------*/
+
+header{
+	color: white;
+	min-height: 500px;
+}
+
+.navigation {
+	
+	background-image: url(../img/background2.jpg);
+	background-position: center center;
+	background-size:cover;
+	
+	
+}
+
+.btn-nav{
+	text-decoration: none;
+	color: white;
+	font-size: 1.25rem;
+	margin-left: 60px;
+	text-align: center;
+	transition: color 0.3s ease 0s;
+}
+
+.btn-nav:hover{
+	color: #ca9d66;
+
+}
+
+.current:hover{
+	color: black;
+	
+}
+
+
+
+.flex-nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+	
+}
+.logo{
+	width: 10%;
+	
+}
+
+
+.text-header{
+	padding-bottom: 200px;
+	margin-top: 100px;
+}
+
+.text-header .btn{
+	margin-top: 10px;
+	display: inline-block;
+	width: 160px;
+	font-size: larger;
+	
+}
+
+.text-header-reserver{
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	padding-bottom: 200px;
+	margin-top: 100px;
+}
+
+.text-header-reserver h1{
+	font-size: 2.5rem;
+}
+
+#menu-burger{
+	font-size: 40px;
+	display: none;
+}
+
+.flex{
+	display: flex;
+	flex-direction: row;
+}
+
+/*----------------------------------------MAIN----------------------------------------*/
+
+.nouveaute{
+	margin-top: 15px;
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+}
+
+.rangee{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+
+}
+
+.nom-prix{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
+}
+
+.card{
+	width: 28%;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 20px;
+
+}
+
+.card-text{
+	width: 28%;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 20px;
+}
+
+.card span{
+	color:rgb(15, 165, 165);
+	
+	text-align: center;
+	
+	align-self: center;
+}
+
+
+
+	
+.rangee-form{
+	display: flex;
+	justify-content: space-around;
+	font-family: "Montserrat", sans-serif;
+	
+}
+
+input, select, textarea{
+
+	height: 50px;
+	width: 100%;
+	display: inline-block;
+	margin-bottom: 15px;
+}
+
+label{
+	font-size: 1.5rem;
+	
+	
+}
+
+.fieldset{
+	font-family: "Montserrat", sans-serif;
+	border: 4px solid rgb(79, 78, 78);
+	border-radius: 15px;
+	margin-bottom: 30px;
+}
+
+.titleform{
+	display: flex;
+	justify-content: center;
+	border-bottom: 3px solid #dcdddd;
+	margin-bottom: 30px;
+	background-color: #F1F3F4;
+	border-radius: 15px;
+	color: #a07d52;
+}
+
+.form-end{
+	
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 15px;
+	
+}
+
+
+
+.form-end label{
+	font-size: 1.5rem;
+}
+
+input[type="reset"], input[type="submit"]{
+	width: inherit;
+	background-color: #ca9d66;
+	padding: 10px;
+	border-radius: 150px;
+	text-decoration: none;
+	color: white;
+	font-family: "Montserrat", sans-serif;
+	transition: color 0.3s ease 0s;
+	text-align: center;
+	display: inline-block;
+	cursor: pointer;
+	border: 1px;
+	margin-bottom: 0;
+}
+
+input[type="checkbox"]:hover, input[type="reset"]:hover, input[type="submit"]:hover{
+	color: black;
+}
+
+input[type="checkbox"]{
+	width: 50px;
+	height: 15px;
+}
+
+
+
+.left-form, .right-form{
+	width: 40%;
+}
+
+.rangee-grid{
+
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px;
+	
+}
+.grid-parent{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: 
+		"img1 img2 img2"
+		"img3 img2 img2"
+		"img4 img4 img5"
+		"img4 img4 img6";
+
+	
+}
+
+#img1{
+	grid-area: img1;
+}
+#img2{
+	grid-area: img2;
+}
+#img3{
+	grid-area: img3;
+}
+#img4{
+	grid-area: img4;
+}
+#img5{
+	grid-area: img5;
+}
+#img6{
+	grid-area: img6;
+}
+
+.img-grid img{
+	width: 100%;
+	height: 100%;
+}
+
+
+/*----------------------------------------FOOTER----------------------------------------*/
+
+footer{
+	background-color: #a07d52;
+}
+
+.rangee-footer{
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.text-map{
+	display: flex;
+	flex-direction: column;
+}
+
+.map{
+	border: 10px solid wheat;
+	border-radius: 5px;
+	background-color: wheat;
+	max-width: 600px;
+	width: 100%;
+	margin-left: 15px;
+}
+
+.map iframe{
+	box-shadow:2px 5px 10px;
+	width: 100%;
+	
+}
+
+footer a{
+	text-decoration: none;
+	color:black;
+	margin-bottom: 25px;
+}
+
+.socials{
+	display: flex;
+	flex-direction: row;
+	
+	justify-content: start;
+	margin-top: 10px;
+}
+
+.socials i{
+	text-align: center;
+	
+	font-size: 50px;
+	background-color: white;
+	border-radius: 150px;
+	padding: 10px;
+	margin-right: 5px;
+	box-shadow:2px 5px 10px;
+	
+}
+
+.socials a {
+	color: black;
+	transition: color 0.3s ease 0s ;
+}
+
+.socials a:hover{
+	color: #a07d52;
+}
+
+
+/*----------------------------------------MEDIAS QUERIES----------------------------------------*/
+
+
+
+
+@media screen and (max-width: 960px) {
+
+	.logo{
+		width: 70px;
+	}
+	
+	nav ul{
+		display: none;
+	}
+
+	#menu-burger{
+		display:block;
+	}
+	.text-header .btn{
+		width: 160px;
+		font-size: 20px;
+	}
+
+	.map{
+		width: 60%;
+		margin-left: 15px;
+	}
+
+	.rangee-form label{
+		font-size:large;
+	}
+	.form-end{
+		flex-direction: column;
+	}
+
+}
+
+@media screen and (max-width: 585px){
+	.rangee{
+		flex-direction: column;
+	}
+	.card{
+		width: 100%;
+	}
+	.card-text{
+		width: 100%;
+	}
+
+	.text-header{
+		text-align: center;
+	}
+
+	.text-header p{
+		display: none;
+	}
+
+	.text-header .btn{
+		width: 50%;
+		font-size: 20px;
+	}
+
+
+	.rangee-footer{
+		flex-direction: column;
+	}
+
+	.socials{
+		justify-content: space-around;
+		
+	}
+	
+	.rangee-form{
+		flex-direction: column;
+		align-items: center;
+		
+	}
+	.right-form{
+		width: 100%;
+		padding: 15px;
+		padding-top: 0;
+	}
+
+	.left-form{
+		width: 100%;
+		padding: 15px;
+		padding-bottom: 0;
+	}
+
+	.form-end{
+		flex-direction: column;
+	}
+
+	.grid-parent{
+		display: block;
+	}
+
+	.map{
+		width: 100%;
+		margin: 0;
+	}
+}
